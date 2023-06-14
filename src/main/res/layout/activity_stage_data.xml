@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StageData">
+
+    <RelativeLayout
+        android:id="@+id/title_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Добавить новые данные"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <ImageButton
+            android:id="@+id/save_data_btn"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="7dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/baseline_check_24" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/stadiirost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar_layout"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Прорастание"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/page_rostok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar_layout"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="41dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Появился зеленый росток:"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/spinner_rostok"
+        android:layout_width="108dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/title_bar_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="36dp"
+        android:layout_toEndOf="@+id/stadiirost" />
+
+    <Spinner
+        android:id="@+id/spinner_buton"
+        android:layout_width="108dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/title_bar_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="323dp"
+        android:layout_marginEnd="38dp"
+        android:layout_toEndOf="@+id/stadiirost" />
+
+    <Spinner
+        android:id="@+id/spinner_cvetok"
+        android:layout_width="108dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/title_bar_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="386dp"
+        android:layout_marginEnd="38dp"
+        android:layout_toEndOf="@+id/stadiirost" />
+
+    <Spinner
+        android:id="@+id/spinner_plod"
+        android:layout_width="108dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/title_bar_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="491dp"
+        android:layout_marginEnd="38dp"
+        android:layout_toEndOf="@+id/stadiirost" />
+
+    <Spinner
+        android:id="@+id/spinner_colorplod"
+        android:layout_width="108dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/title_bar_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="603dp"
+        android:layout_marginEnd="34dp"
+        android:layout_toEndOf="@+id/stadiirost" />
+
+    <Spinner
+        android:id="@+id/spinner_zavizplod"
+        android:layout_width="108dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/title_bar_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="428dp"
+        android:layout_marginEnd="37dp"
+        android:layout_toEndOf="@+id/stadiirost" />
+
+    <TextView
+        android:id="@+id/stadiirost2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar_layout"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Формирование листьев и корней"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/page_lenth_plant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar_layout"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="122dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Длина растения:"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/lenthplantEditText"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stadiirost2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="56dp"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/page_lenth_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar_layout"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="169dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Длина листа:"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/lenthlistEditText"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stadiirost2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="54dp"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/stadiirost3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar_layout"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="203dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Вегетация"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/stadiirost4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar_layout"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="358dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Цветение"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/stadiirost5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar_layout"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="467dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Формрование плодов"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/stadiirost6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar_layout"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="576dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Созревание"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/page_veget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar_layout"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="244dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Длина растения:"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/lenthplant2EditText"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stadiirost3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-11dp"
+        android:layout_marginEnd="53dp"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/lenthlist2EditText"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stadiirost3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="52dp"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/sizeplodEditText"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stadiirost3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="303dp"
+        android:layout_marginEnd="29dp"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/page_lenth_list_veget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar_layout"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="283dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Длина листа:"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/page_buton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar_layout"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="326dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Появление бутона:"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/page_buton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar_layout"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="394dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Раскрытие цветка:"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/page_buton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar_layout"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="433dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Завязался плод:"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/page_buton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar_layout"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="543dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Размер плода:"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/page_buton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar_layout"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="615dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Равномерность окраса плода:"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/page_buton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar_layout"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="506dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Появление плода:"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>

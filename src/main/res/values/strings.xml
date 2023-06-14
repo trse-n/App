@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application2</string>
+    <string name="exit_icon">Выйти</string>
+    <string name="main_icon">Главная</string>
+    <string name="zametki_icon">Заметки</string>
+    <string name="text_monitoring">Мониторинг</string>
+    <string name="text_sost">состояния растений</string>
+    <string name="settings_icon"></string>
+    <string name="home_icon"></string>
+    <string name="text_descript">Пшеница делится на виды, каждый из которых имеет свои особенности созревания и время посева. Различают яровые и озимые сорта пшеницы. Яровую пшеницу высеивают в поля ранней весной. Период созревания зерен – 3 месяца, сбор приходится на сентябрь. Посев озимых сортов начинают проводить в осенний период, и уже в начале лета следующего года начинается сбор урожая. Озимые сорта считаются самыми плодовитыми и урожайными.</string>
+
+</resources>

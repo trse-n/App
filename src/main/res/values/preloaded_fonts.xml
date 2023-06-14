@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/crete_round</item>
+        <item>@font/manuale</item>
+        <item>@font/manuale_medium</item>
+        <item>@font/montserrat</item>
+        <item>@font/montserrat_bold</item>
+        <item>@font/tienne</item>
+        <item>@font/tienne_bold</item>
+    </array>
+</resources>
